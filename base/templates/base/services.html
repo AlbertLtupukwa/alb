@@ -1,0 +1,97 @@
+{% extends 'main.html '%}
+{% block content %}
+<style>
+  #services {
+    text-align: center;
+    color: black;
+    text-shadow: 2px;
+  }
+
+  .myservices {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 5px 5px 5px 5px;
+    justify-content: space-between;
+  }
+
+  .service {
+    background-color: white;
+    margin-left: 26px;
+    margin-right: 26px;
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 5px;
+    text-align: center;
+  }
+
+  .service:hover {
+    background-color: whitesmoke;
+    box-shadow: 3px 3px 3px;
+    transition: .5s;
+    transform: scale(1.1) translate(-0.3px, -0.8px);
+  }
+
+  .service h1:hover {
+    color: rgba(17, 216, 216, 0.925);
+    text-decoration-line: underline;
+    transition: .5s;
+    transform: scale(1.1) translate(-0.5px, -0.8px);
+  }
+
+  @media screen and (max-width: 760px) {
+    .myservices {
+      margin-top: 10px;
+      margin-bottom: 10px;
+      display: block;
+      width: 100%;
+
+    }
+
+    .service {
+      margin-top: 25px;
+      margin-bottom: 25px;
+      margin-left: 30px;
+      margin-right: 30px;
+    }
+  }
+</style>
+</div>
+<h2 id="services"><a name="Services">Services</a></h2>
+<div class="myservices">
+  <div class="service">
+    <h1>Web Design</h1>
+    <p>We help design your website according to your users needs and wants</p>
+  </div>
+  <div class="service">
+    <h1>Web Design</h1>
+    <p>We help design your website according to your users needs and wants</p>
+  </div>
+  <div class="service">
+    <h1>Web Design</h1>
+    <p>We help design your website according to your users needs and wants</p>
+  </div>
+  <div class="service">
+    <h1>Web Design</h1>
+    <p>We help design your website according to your users needs and wants</p>
+  </div>
+  <div class="service">
+    <h1>Web Design</h1>
+    <p>We help design your website according to your users needs and wants</p>
+  </div>
+  <div class="service">
+    <h1>Web Design</h1>
+    <p>We help design your website according to your users needs and wants</p>
+  </div>
+  <div class="service">
+    <h1>Web Design</h1>
+    <p>We help design your website according to your users needs and wants</p>
+  </div>
+</div>
+</div>
+
+{% endblock %}

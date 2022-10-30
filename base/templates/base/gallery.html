@@ -1,0 +1,264 @@
+{% extends 'main.html' %}
+
+{% block content %}
+{% load static %}
+<style>
+    @import url('https://fonts.googleapis.com/css?family=Comfortaa|Patua+One');
+
+    /* Card Based Layout - Base styles */
+
+    body {
+        background: hsl(0, 0%, 90%);
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        clear: both;
+        font-family: 'Patua One', serif;
+        letter-spacing: 2px;
+    }
+
+    h2 {
+        font-size: 1rem;
+        color: #007489;
+    }
+
+    p {
+        margin-bottom: 1.5em;
+        color: #898989;
+    }
+
+    b,
+    strong {
+        font-weight: bold;
+    }
+
+    dfn,
+    cite,
+    em,
+    i {
+        font-style: italic;
+    }
+
+    blockquote {
+        margin: 0 1.5em;
+    }
+
+    address {
+        margin: 0 0 1.5em;
+    }
+
+    pre {
+        background: #eee;
+        font-family: "Courier 10 Pitch", Courier, monospace;
+        font-size: 15px;
+        font-size: 1.5rem;
+        line-height: 1.6;
+        margin-bottom: 1.6em;
+        max-width: 100%;
+        overflow: auto;
+        padding: 1.6em;
+    }
+
+    code,
+    kbd,
+    tt,
+    var {
+        font: 15px Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+    }
+
+    abbr,
+    acronym {
+        border-bottom: 1px dotted #666;
+        cursor: help;
+    }
+
+    mark,
+    ins {
+        background: #fff9c0;
+        text-decoration: none;
+    }
+
+    sup,
+    sub {
+        font-size: 75%;
+        height: 0;
+        line-height: 0;
+        position: relative;
+        vertical-align: baseline;
+    }
+
+    sup {
+        bottom: 1ex;
+    }
+
+    sub {
+        top: .5ex;
+    }
+
+    small {
+        font-size: 75%;
+    }
+
+    big {
+        font-size: 125%;
+    }
+
+    .masthead {
+        background-color: #005b75;
+    }
+
+    .masthead p,
+    .masthead p a {
+        color: white;
+    }
+
+    .site-title {
+        color: white;
+        text-align: center;
+    }
+
+    img {
+        display: block;
+        border: 0;
+        width: 100%;
+        height: auto;
+    }
+
+
+    .card {
+        background: white;
+        margin-bottom: 2em;
+    }
+
+    .card a {
+        color: black;
+        text-decoration: none;
+    }
+
+    .card a:hover {
+        box-shadow: 3px 3px 8px hsl(0, 0%, 80%);
+    }
+
+    .card-content {
+        padding: 1.4em;
+    }
+
+    .card-content h2 {
+        margin-top: 0;
+        margin-bottom: .5em;
+        font-weight: bold;
+    }
+
+    .card-content p {
+        font-size: 80%;
+    }
+
+    /* Flexbox stuff */
+
+    .cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .card {
+        flex: 0 1 24%;
+    }
+
+    .site-branding {
+        margin-top: 5px;
+    }
+    main-area{
+        background: white;
+    }
+
+    @media screen and (max-width: 600px) {
+        .centered {
+            width: 100%;
+        }
+    }
+</style>
+<header class="masthead clear">
+    <div class="centered">
+
+        <div class="site-branding">
+            <h1 class="site-title">Our Gallery</h1>
+        </div><!-- .site-title -->
+    </div><!-- .centered -->
+</header><!-- .masthead -->
+
+<main class="main-area">
+
+    <div class="centered">
+
+        <section class="cards">
+
+            <article class="card">
+                <a href="#">
+                    <picture class="thumbnail">
+                        <img src="{% static 'animal1.jpg' %}" alt="A banana that looks like a bird">
+                    </picture>
+                    <div class="card-content">
+
+                        <h2>Vacation Image 01</h2>
+                        <p>TUX re-inventing the wheel, and move the needle. Feature creep dogpile that but diversify
+                            kpis but market-facing.</p>
+                    </div><!-- .card-content -->
+                </a>
+            </article><!-- .card -->
+
+            <article class="card">
+                <a href="#">
+                    <picture class="thumbnail">
+                        <img src="{% static 'animal1.jpg' %}" alt="Norwegian boller">
+                    </picture>
+                    <div class="card-content">
+                        <h2>Vacation Image 02</h2>
+                        <p>Staff engagement synergize productive mindfulness and waste of resources cross sabers, or
+                            forcing function shotgun approach drink the Kool-aid.</p>
+                        <p>Execute are we in agreeance what do you feel you would bring to the table if you were hired
+                            for this position, nor closer to the metal goalposts, are there any leftovers in the
+                            kitchen?.</p>
+                    </div><!-- .card-content -->
+                </a>
+            </article><!-- .card -->
+
+            <article class="card">
+                <a href="#">
+                    <picture class="thumbnail">
+                        <img src="{% static 'animal1.jpg' %}" alt="A dinosaur wearing an aluminium jacket">
+                    </picture>
+                    <div class="card-content">
+                        <h2>Vacation Image 03</h2>
+                        <p>Viral engagement anti-pattern back of the net, for meeting assassin horsehead offer. Loop
+                            back design thinking drop-dead date. </p>
+                    </div><!-- .card-content -->
+                </a>
+            </article><!-- .card -->
+
+            <article class="card">
+                <a href="#">
+                    <picture class="thumbnail">
+                        <img src="{% static 'animal1.jpg' %}" alt="Chocolate filled boller">
+                    </picture>
+                    <div class="card-content">
+                        <h2>Vacation Image 04</h2>
+                        <p>We need a paradigm shift get all your ducks in a row. I just wanted to give you a heads-up we
+                            need distributors to evangelize the new line to local markets when does this sunset? so
+                            waste of resources, yet fire up your browser, or touch base closing these latest prospects
+                            is like putting socks on an octopus.</p>
+                    </div><!-- .card-content -->
+                </a>
+            </article><!-- .card -->
+
+        </section><!-- .cards -->
+
+    </div><!-- .centered -->
+
+</main>
+{% endblock %}
