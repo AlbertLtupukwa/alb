@@ -9,21 +9,18 @@
 
   .myservices {
     display: flex;
+    flex-basis: auto;
     flex-wrap: wrap;
-    width: 100%;
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    padding: 5px 5px 5px 5px;
     justify-content: space-between;
-  }
-
-  .service {
-    background-color: white;
     margin-left: 26px;
     margin-right: 26px;
     padding: 5px;
+  }
+
+  .service {
+    flex: 0 1 33%;
+    margin-bottom: 5px;
+    background-color: white;
     border: 1px solid black;
     border-radius: 5px;
     text-align: center;
@@ -32,15 +29,13 @@
   .service:hover {
     background-color: whitesmoke;
     box-shadow: 3px 3px 3px;
-    transition: .5s;
-    transform: scale(1.1) translate(-0.3px, -0.8px);
   }
 
   .service h1:hover {
-    color: rgba(17, 216, 216, 0.925);
+    color: rgba(17, 216, 216, 1.925);
     text-decoration-line: underline;
     transition: .5s;
-    transform: scale(1.1) translate(-0.5px, -0.8px);
+    transform: scale(1.0) translate(-1.4px, -1.6px);
   }
 
   @media screen and (max-width: 760px) {
@@ -60,38 +55,52 @@
     }
   }
 </style>
-</div>
 <h2 id="services"><a name="Services">Services</a></h2>
 <div class="myservices">
   <div class="service">
-    <h1>Web Design</h1>
-    <p>We help design your website according to your users needs and wants</p>
+    <h1>Tours and Travel</h1>
+    <p>Get to experience a whole different view of the world. Get to explore the breath-taking views of the magical
+      samburu
+      ranging from wildlife, ranges and other scenic sites
+    </p>
   </div>
   <div class="service">
-    <h1>Web Design</h1>
-    <p>We help design your website according to your users needs and wants</p>
+    <h1>Conferencing</h1>
+    <p>At the Samburu national reserve we offer modernised conferencing facilities. Our conference rooms
+      encourage and support the publication of successful presentations, the creation of networks,
+      evaluations of presenters and other tangible outcomes
+    </p>
   </div>
   <div class="service">
-    <h1>Web Design</h1>
-    <p>We help design your website according to your users needs and wants</p>
+    <h1>Accomodation</h1>
+    <p>We offer the best accomodation facilities which are affordable clean and comfortable. Our rooms range in
+      different sizes
+      with some offering spectacular morning views of the rising and setting sun.
+    </p>
   </div>
   <div class="service">
-    <h1>Web Design</h1>
-    <p>We help design your website according to your users needs and wants</p>
+    <h1>Team building</h1>
+    <p>Team building is the process of creating a team that cohesively works together towards a common goal.
+      We offer team building activities to improve workplace projects that involve teamwork because it helps the teams
+      understand each other better.
+    </p>
   </div>
   <div class="service">
-    <h1>Web Design</h1>
-    <p>We help design your website according to your users needs and wants</p>
+    <h1>Village Visits</h1>
+    <p>The Samburu Cultural visit is typically an excursion included into a longer multi day Samburu safari tour,
+      and couple of hours are set apart for this brief interactive visit to the village, which usually happens to be
+      on the borders of the Samburu game reserve.
+      Many tourists wish to know how much it costs to visit a Samburu village. </p>
   </div>
   <div class="service">
-    <h1>Web Design</h1>
-    <p>We help design your website according to your users needs and wants</p>
-  </div>
-  <div class="service">
-    <h1>Web Design</h1>
-    <p>We help design your website according to your users needs and wants</p>
+    <h1>Camel treking</h1>
+    <p>One of the most refreshing and fun-filled experiences on Safari is exploring Kenya's wilderness on camelback.
+      Unlike the traditional game viewing experience, a camelback safari in Samburu allows guests to get up-close with
+      plains game such as zebra, giraffe, and ostrich.
+      While on safari, you will walk or ride through some of the most remote and scenically beautiful land in Northern
+      Kenya,
+      with Samburu tribesmen and camels carrying the camp, or ride them through the dry riverbeds.</p>
   </div>
 </div>
 </div>
-
 {% endblock %}

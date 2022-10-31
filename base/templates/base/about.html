@@ -3,6 +3,18 @@
 {% block content %}
 {% load static %}
 <style>
+  #home{
+    text-align: center;
+  }
+  #homes{
+    font-weight: bold;
+    color: #007489;
+    text-align: center;
+  }
+  hr{
+    border: 10px solid black;
+  border-radius: 1.5px;
+  }
   #services {
     text-align: center;
     color: black;
@@ -39,6 +51,16 @@
     transition: .5s;
     transform: scale(1.0) translate(-1.4px, -1.6px);
   }
+
+  /* #services,
+  a {
+    color: black;
+    font-weight: bold;
+  } */
+ /* #services, h2, a{
+    color: black !important;
+    font-weight: bold;
+  } */
 
   @media screen and (max-width: 760px) {
     .myservices {
@@ -78,7 +100,7 @@
 
   p {
     margin-bottom: 1.5em;
-    color: #898989;
+    color: black;
   }
 
   b,
@@ -232,6 +254,7 @@
       width: 100%;
     }
   }
+
   @media screen and (max-width: 760px) {
     .carousel-inner {
       margin-top: 10px;
@@ -239,7 +262,8 @@
       display: block;
       width: 100%;
     }
-    .carousel-item{
+
+    .carousel-item {
       height: 50%;
       width: 100%;
     }
@@ -285,46 +309,89 @@
   </button>
 </div>
 </div>
-<h2 id="services"><a name="Services">Services</a></h2>
+
+<h1>The Samburu National Reserve</h1>
+<h2 id="homes">LOCATION</h2>
+
+<p id="home">Samburu National Reserve is situated at the southeastern corner of Samburu District in the Rift Valley Province of
+  Kenya. It is bordered to the south by Ewaso Nyiro River, which separates it from the Buffalo Springs National Reserve.
+
+  The reserve covers an area of 165 Km² and is located around 345Km from Nairobi.</p>
+
+<h2 id="homes"> CLIMATIC CONDITIONS</h2>
+
+<p id="home">The Reserve lies within ecological zone V- which is classified as arid and semi- arid with moisture index of 42 to
+  57,
+  which indicate that evapo-transpiration is greater than available moisture. The days are extremely hot while the
+  nights
+  are cool. The annual mean temperatures range between 18ºC and 30ºC, while the mean annual rainfall is 354mm with peaks
+  in November and April. The dry season starts in late May, and goes up to early October during when large concentration
+  of wildlife is found in the reserve due to availability of lush vegetation along the Ewaso Nyiro River, the main
+  source
+  of water to the Reserve and the nearby communities.</p>
+
+<h2 id="homes">AVAILABLE GAMES (AND CHANCES OF SEEING)</h2>
+
+<p id="home">The reserve is reach in wildlife with fame for abundance in rare northern specialist species such as the Grevy Zebra,
+  Somali Ostrich, Reticulated Giraffe, Gerenuk and the Beisa Oryx (Also referred as Samburu Special). The reserve is
+  also
+  popular with a minimum of 900 elephants. Large predators such as the Lion, Leopard and Cheetah are an important
+  attraction (Kamunyak the Miracle Lioness that adapted the baby Oryx is a resident in the reserve). Wild dog sightings
+  are also a common attraction to this unique protected area. Birdlife is abundant with over 450 species recorded. Birds
+  of the arid northern bush country are augmented by a number of riverine forest species. Lesser Kestrel and the Taita
+  Falcon are species of global conservation concern and they both utilize the reserve. Five species categorized as
+  vulnerable have recorded in the reserve. These are African Darter, Great Egret, White-headed Vulture, Martial Eagle
+  and
+  the Yellow-billed Ox-pecker.
+  Critically endangered species under CITIES – Pancake tortoise (malacochersus tornieri) is found in the reserve.</p>
+
+  <hr>
+
+<h1 id="services"><a name="Services">Services</a></h2>
 <div class="myservices">
   <div class="service">
     <h1>Tours and Travel</h1>
-    <p>Get to experience a whole different view of the world. Get to explore the breath-taking views of the magical samburu
-      ranging from wildlife, ranges and other scenic sites 
+    <p>Get to experience a whole different view of the world. Get to explore the breath-taking views of the magical
+      samburu
+      ranging from wildlife, ranges and other scenic sites
     </p>
   </div>
   <div class="service">
     <h1>Conferencing</h1>
-    <p>At the Samburu national reserve we offer modernised conferencing facilities. Our conference rooms 
-      encourage and support the publication of successful presentations, the creation of networks, 
+    <p>At the Samburu national reserve we offer modernised conferencing facilities. Our conference rooms
+      encourage and support the publication of successful presentations, the creation of networks,
       evaluations of presenters and other tangible outcomes
     </p>
   </div>
   <div class="service">
     <h1>Accomodation</h1>
-    <p>We offer the best accomodation facilities which are affordable clean and comfortable. Our rooms range in different sizes 
+    <p>We offer the best accomodation facilities which are affordable clean and comfortable. Our rooms range in
+      different sizes
       with some offering spectacular morning views of the rising and setting sun.
     </p>
   </div>
   <div class="service">
     <h1>Team building</h1>
     <p>Team building is the process of creating a team that cohesively works together towards a common goal.
-      We offer team building activities to improve workplace projects that involve teamwork because it helps the teams understand each other better.
+      We offer team building activities to improve workplace projects that involve teamwork because it helps the teams
+      understand each other better.
     </p>
   </div>
   <div class="service">
     <h1>Village Visits</h1>
-    <p>The Samburu Cultural visit is typically an excursion included into a longer multi day Samburu safari tour, 
-      and couple of hours are set apart for this brief interactive visit to the village, which usually happens to be 
-      on the borders of the Samburu game reserve. 
+    <p>The Samburu Cultural visit is typically an excursion included into a longer multi day Samburu safari tour,
+      and couple of hours are set apart for this brief interactive visit to the village, which usually happens to be
+      on the borders of the Samburu game reserve.
       Many tourists wish to know how much it costs to visit a Samburu village. </p>
   </div>
   <div class="service">
     <h1>Camel treking</h1>
-    <p>One of the most refreshing and fun-filled experiences on Safari is exploring Kenya's wilderness on camelback. 
-      Unlike the traditional game viewing experience, a camelback safari in Samburu allows guests to get up-close with plains game such as zebra, giraffe, and ostrich. 
-      While on safari, you will walk or ride through some of the most remote and scenically beautiful land in Northern Kenya,
-       with Samburu tribesmen and camels carrying the camp, or ride them through the dry riverbeds.</p>
+    <p>One of the most refreshing and fun-filled experiences on Safari is exploring Kenya's wilderness on camelback.
+      Unlike the traditional game viewing experience, a camelback safari in Samburu allows guests to get up-close with
+      plains game such as zebra, giraffe, and ostrich.
+      While on safari, you will walk or ride through some of the most remote and scenically beautiful land in Northern
+      Kenya,
+      with Samburu tribesmen and camels carrying the camp, or ride them through the dry riverbeds.</p>
   </div>
 </div>
 </div>
@@ -376,8 +443,9 @@
           </picture>
           <div class="card-content">
             <h2>Ostrich</h2>
-            <p>Ostriches are large, flightless birds that have long legs and a long neck that protrudes from a round body. 
-              Males have bold black-and-white coloring that they use to attract females. 
+            <p>Ostriches are large, flightless birds that have long legs and a long neck that protrudes from a round
+              body.
+              Males have bold black-and-white coloring that they use to attract females.
               Females, on the other hand, are light brown. Ostriches are bigger than any other bird in the world</p>
           </div><!-- .card-content -->
         </a>
@@ -390,7 +458,7 @@
           </picture>
           <div class="card-content">
             <h2>Butterfly-Nation</h2>
-            <p>Get to experinence the cultural diversity of the maa people, the maa people 
+            <p>Get to experinence the cultural diversity of the maa people, the maa people
               are loving, caring and kind, with a very rich cultural background.
             </p>
           </div><!-- .card-content -->
@@ -414,7 +482,7 @@
           </picture>
           <div class="card-content">
             <h2>Scenic North</h2>
-            <p>With elegant and high rising hills seen in the background, get to explore the reserve 
+            <p>With elegant and high rising hills seen in the background, get to explore the reserve
               by long treks with well trained and experienced rangers.
             </p>
           </div><!-- .card-content -->
@@ -427,7 +495,7 @@
           </picture>
           <div class="card-content">
             <h2>The Desert Cruisers</h2>
-            <p>The land-rovers and land-cruisers are often referred to as beasts due to their capabilities 
+            <p>The land-rovers and land-cruisers are often referred to as beasts due to their capabilities
               of traversing any kinds of terrain(all weather).
             </p>
           </div><!-- .card-content -->

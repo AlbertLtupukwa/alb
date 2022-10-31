@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<nav class="navbar navbar-expand-lg navbar fixed-top navbar-light bg-light" style="background-color: #007489;">
     <div class="container-fluid">
         
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -9,7 +9,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="{% url 'about' %}">About</a>
+                    <a class="nav-link active" aria-current="page" href="{% url 'about' %}">Home</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="{% url 'services' %}">Services</a>
@@ -20,8 +20,8 @@
                         Dropdown
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="{% url 'gallery' %}">gallery</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="{% url 'gallery' %}">Gallery</a></li>
+                        <li><a class="dropdown-item" href="#"></a></li>
                     </ul>
                 </li>
             </ul>

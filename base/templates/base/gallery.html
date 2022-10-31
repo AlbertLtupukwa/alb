@@ -6,11 +6,6 @@
     @import url('https://fonts.googleapis.com/css?family=Comfortaa|Patua+One');
 
     /* Card Based Layout - Base styles */
-
-    body {
-        background: hsl(0, 0%, 90%);
-    }
-
     h1,
     h2,
     h3,
@@ -161,6 +156,7 @@
     /* Flexbox stuff */
 
     .cards {
+        background: white;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
@@ -173,12 +169,12 @@
     .site-branding {
         margin-top: 5px;
     }
-    main-area{
-        background: white;
-    }
 
-    @media screen and (max-width: 600px) {
-        .centered {
+    @media screen and (max-width: 760px) {
+        .cards {
+            margin-top: 10px;
+            margin-bottom: 10px;
+            display: block;
             width: 100%;
         }
     }
@@ -201,13 +197,12 @@
             <article class="card">
                 <a href="#">
                     <picture class="thumbnail">
-                        <img src="{% static 'animal1.jpg' %}" alt="A banana that looks like a bird">
+                        <img src="{% static 'camel-treks.jpg' %}" alt="A banana that looks like a bird">
                     </picture>
                     <div class="card-content">
 
-                        <h2>Vacation Image 01</h2>
-                        <p>TUX re-inventing the wheel, and move the needle. Feature creep dogpile that but diversify
-                            kpis but market-facing.</p>
+                        <h2>Camel-treks</h2>
+                        <p>Get to hitch a ride at the back of camels during our enjoyable camel treks</p>
                     </div><!-- .card-content -->
                 </a>
             </article><!-- .card -->
@@ -215,15 +210,12 @@
             <article class="card">
                 <a href="#">
                     <picture class="thumbnail">
-                        <img src="{% static 'animal1.jpg' %}" alt="Norwegian boller">
+                        <img src="{% static 'room.jpg' %}" alt="Norwegian boller">
                     </picture>
                     <div class="card-content">
-                        <h2>Vacation Image 02</h2>
-                        <p>Staff engagement synergize productive mindfulness and waste of resources cross sabers, or
-                            forcing function shotgun approach drink the Kool-aid.</p>
-                        <p>Execute are we in agreeance what do you feel you would bring to the table if you were hired
-                            for this position, nor closer to the metal goalposts, are there any leftovers in the
-                            kitchen?.</p>
+                        <h2>Acommodation</h2>
+                        <p>Get to view our scenic sites as you relax at the comfort of our luxurious rooms</p>
+                        <p>Providing spectacular views of the setting and rising sun</p>
                     </div><!-- .card-content -->
                 </a>
             </article><!-- .card -->
@@ -231,12 +223,15 @@
             <article class="card">
                 <a href="#">
                     <picture class="thumbnail">
-                        <img src="{% static 'animal1.jpg' %}" alt="A dinosaur wearing an aluminium jacket">
+                        <img src="{% static 'ostrich.jpg' %}" alt="A dinosaur wearing an aluminium jacket">
                     </picture>
                     <div class="card-content">
-                        <h2>Vacation Image 03</h2>
-                        <p>Viral engagement anti-pattern back of the net, for meeting assassin horsehead offer. Loop
-                            back design thinking drop-dead date. </p>
+                        <h2>Ostrich</h2>
+                        <p>Ostriches are large, flightless birds that have long legs and a long neck that protrudes from
+                            a round body.
+                            Males have bold black-and-white coloring that they use to attract females.
+                            Females, on the other hand, are light brown. Ostriches are bigger than any other bird in the
+                            world</p>
                     </div><!-- .card-content -->
                 </a>
             </article><!-- .card -->
@@ -244,14 +239,50 @@
             <article class="card">
                 <a href="#">
                     <picture class="thumbnail">
-                        <img src="{% static 'animal1.jpg' %}" alt="Chocolate filled boller">
+                        <img src="{% static 'cultural-diversity.jpg' %}" alt="Chocolate filled boller">
                     </picture>
                     <div class="card-content">
-                        <h2>Vacation Image 04</h2>
-                        <p>We need a paradigm shift get all your ducks in a row. I just wanted to give you a heads-up we
-                            need distributors to evangelize the new line to local markets when does this sunset? so
-                            waste of resources, yet fire up your browser, or touch base closing these latest prospects
-                            is like putting socks on an octopus.</p>
+                        <h2>Butterfly-Nation</h2>
+                        <p>Get to experinence the cultural diversity of the maa people, the maa people
+                            are loving, caring and kind, with a very rich cultural background.
+                        </p>
+                    </div><!-- .card-content -->
+                </a>
+            </article><!-- .card -->
+            <article class="card">
+                <a href="#">
+                    <picture class="thumbnail">
+                        <img src="{% static 'team.jpg' %}" alt="Chocolate filled boller">
+                    </picture>
+                    <div class="card-content">
+                        <h2>Team Building and Family time</h2>
+                        <p>Get to strengthen your bonds in the middle of the vast savannah lands</p>
+                    </div><!-- .card-content -->
+                </a>
+            </article><!-- .card -->
+            <article class="card">
+                <a href="#">
+                    <picture class="thumbnail">
+                        <img src="{% static 'scenic.jpg' %}" alt="Chocolate filled boller">
+                    </picture>
+                    <div class="card-content">
+                        <h2>Scenic North</h2>
+                        <p>With elegant and high rising hills seen in the background, get to explore the reserve
+                            by long treks with well trained and experienced rangers.
+                        </p>
+                    </div><!-- .card-content -->
+                </a>
+            </article><!-- .card -->
+            <article class="card">
+                <a href="#">
+                    <picture class="thumbnail">
+                        <img src="{% static 'safari.jpg' %}" alt="Chocolate filled boller">
+                    </picture>
+                    <div class="card-content">
+                        <h2>The Desert Cruisers</h2>
+                        <p>The land-rovers and land-cruisers are often referred to as beasts due to their capabilities
+                            of traversing any kinds of terrain(all weather).
+                        </p>
                     </div><!-- .card-content -->
                 </a>
             </article><!-- .card -->
